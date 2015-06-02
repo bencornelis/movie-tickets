@@ -88,4 +88,17 @@ $( document ).ready(function() {
     $("select#movie-title").change(function() {
       populateMovieTimes();
     });
+
+    $("form#new-ticket").submit(function(event) {
+      event.preventDefault();
+
+      var movieName = $("select#movie-title").text()
+      var isFirstRelease = false;
+      if ($("select#movie-title").val() === "first-run") {isFirstRelease = true;}
+      var timeArray = $("select#showtimes").val().split(":");
+      var showtime = new Showtime(parseInt(timeArray[0]), parseInt(timeArray[1]));
+      var age = parseInt($("input#age").val());
+
+      var ticket = new Ticket(movieName, isFirstRelease, showtime, age);
+    });
 });

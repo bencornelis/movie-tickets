@@ -7,6 +7,23 @@ body {
   padding:50px;
 }
 
-#showtimes {
-  
+#ticket {
+  background-image: url("../img/blank-ticket.jpeg");
+  height: 280px;
+  width: 600px;
+  padding:40px;
+}
+
+#inner-ticket {
+  background: red;
+  height: 100%;
+  width: 100%;
+}
+
+#ticket-title {
+
+  /*position:relative;
+  top: 50px;*/
+  /*transform-origin: 50% 10%;
+  transform: rotate(90deg);*/
 }
