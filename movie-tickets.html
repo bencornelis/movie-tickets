@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+
+    <script src='js/lib/jquery-1.11.3.js'></script>
+    <script src='js/script.js'></script>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-2">
+          <form id="new-ticket" class="well">
+            <div class="form-group">
+              <label for="movie-title">Movie title:</label>
+              <select id="movie-title">
+                <option val="first-run">Godzilla</option>
+                <option val="second-run">Inception</option>
+                <option val="first-run">Star Wars</option>
+                <option val="second-run">Interstellar</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <select id="showtimes">
+                
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <input type="number" id="age" min="8" required>
+            </div>
+
+            <button type="submit" class="btn btn-warning">Print ticket</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
